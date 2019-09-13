@@ -29,6 +29,6 @@ xhttp.onreadystatechange = function() {
     }
     
 }
-xhttp.open("GET", "http://www.omdbapi.com/?apikey=801668c5&t="+qu+"",true);
+xhttp.open("GET", "http://www.omdbapi.com/?apikey=5&t="+qu+"",true);
 xhttp.send();
 }
