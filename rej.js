@@ -8,10 +8,14 @@ xhttp.onreadystatechange = function() {
        var s="";
        s = '<div class="dvImg">';
        s+="<h1>Movie Name:"+movie.Title+"</h1>";
-       s+="<p>Director:"+movie.Director+"</p>";
-       s+="<p>Year:"+movie.Year+"</p>";
+       s+='<p id="dir">Director:'+movie.Director+"</p>";
+       s+="<p >Year:"+movie.Year+"</p>";
+       s+='<p id="actor">Actor:'+movie.Actors+"</p>";
        s+="<p>imdbRating:"+movie.imdbRating+"</p>";
-       s+="<p>Plot:"+movie.Plot+"</p>";
+    for(i=0;i<movie.Ratings.length;i++){
+        s+="<p>"+movie.Ratings[i].Source+':'+movie.Ratings[i].Value+"</p>";
+    }
+       s+='<p id="plot">Plot:'+movie.Plot+"</p>";
        s+="<p>Writers:"+movie.Writer+"</p>";
        s+="<img src=" + movie.Poster+">";
      

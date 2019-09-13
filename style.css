@@ -12,3 +12,12 @@
 jumbotron{
     height: 120px;
 }
+#dir{
+    color:red;
+}
+#actor{
+    color:red;
+}
+#plot{
+    color:red;
+}
